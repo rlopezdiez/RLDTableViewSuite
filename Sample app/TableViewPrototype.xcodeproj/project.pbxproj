@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4506F8751AE5508400EF8A33 /* RLDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4506F8741AE5508400EF8A33 /* RLDWebViewController.m */; };
+		4506F8791AE558AF00EF8A33 /* RLDGenericTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4506F8781AE558AF00EF8A33 /* RLDGenericTableViewCell.m */; };
+		4506F87B1AE5D75900EF8A33 /* viewModelData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4506F87A1AE5D75900EF8A33 /* viewModelData.plist */; };
+		451E2C3E1AE3C60000FCE9A0 /* RLDTableViewModelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 451E2C3D1AE3C60000FCE9A0 /* RLDTableViewModelProvider.m */; };
+		454751481ADFADDF00813F1B /* NSObject+Accessors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4547513C1ADFADDF00813F1B /* NSObject+Accessors.m */; };
+		454751491ADFADDF00813F1B /* RLDTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4547513E1ADFADDF00813F1B /* RLDTableViewDataSource.m */; };
+		4547514A1ADFADDF00813F1B /* RLDTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 454751401ADFADDF00813F1B /* RLDTableViewDelegate.m */; };
+		4547514B1ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 454751431ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.m */; };
+		4547514C1ADFADDF00813F1B /* RLDTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454751451ADFADDF00813F1B /* RLDTableViewModel.m */; };
+		454EABA91AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABA81AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.m */; };
+		454EABB31AE2F98E000B47C2 /* RLDBigPictureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABAC1AE2F98E000B47C2 /* RLDBigPictureTableViewCell.m */; };
+		454EABB41AE2F98E000B47C2 /* RLDCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABAE1AE2F98E000B47C2 /* RLDCommentTableViewCell.m */; };
+		454EABB51AE2F98E000B47C2 /* RLDSimpleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABB01AE2F98E000B47C2 /* RLDSimpleTableViewCell.m */; };
+		454EABB61AE2F98E000B47C2 /* RLDTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABB21AE2F98E000B47C2 /* RLDTableViewHeaderView.m */; };
+		454EABC21AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABB91AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.m */; };
+		454EABC31AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABBB1AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.m */; };
+		454EABC41AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABBD1AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.m */; };
+		454EABC51AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABBF1AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.m */; };
+		454EABC61AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABC11AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.m */; };
+		454EABCA1AE2FA08000B47C2 /* RLDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 454EABC91AE2FA08000B47C2 /* RLDMasterViewController.m */; };
+		454EABD61AE31EAC000B47C2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 454EABD21AE31EAC000B47C2 /* Images.xcassets */; };
+		454EABD71AE31EAC000B47C2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454EABD31AE31EAC000B47C2 /* LaunchScreen.xib */; };
+		454EABD81AE31EAC000B47C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 454EABD41AE31EAC000B47C2 /* Main.storyboard */; };
+		454EABD91AE31EAC000B47C2 /* RLDTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 454EABD51AE31EAC000B47C2 /* RLDTableViewHeaderView.xib */; };
+		4585806E1ADFD4A5004CAA27 /* RLDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4585806D1ADFD4A5004CAA27 /* RLDTableViewController.m */; };
+		458580791ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 458580781ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.m */; };
+		45EDE6001ADFAD8500644F70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EDE5FF1ADFAD8500644F70 /* main.m */; };
+		45EDE6031ADFAD8500644F70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45EDE6021ADFAD8500644F70 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4506F8731AE5508400EF8A33 /* RLDWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDWebViewController.h; sourceTree = "<group>"; };
+		4506F8741AE5508400EF8A33 /* RLDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDWebViewController.m; sourceTree = "<group>"; };
+		4506F8761AE5585C00EF8A33 /* RLDHandledViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDHandledViewProtocol.h; sourceTree = "<group>"; };
+		4506F8771AE558AF00EF8A33 /* RLDGenericTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDGenericTableViewCell.h; sourceTree = "<group>"; };
+		4506F8781AE558AF00EF8A33 /* RLDGenericTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDGenericTableViewCell.m; sourceTree = "<group>"; };
+		4506F87A1AE5D75900EF8A33 /* viewModelData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = viewModelData.plist; sourceTree = "<group>"; };
+		451E2C3C1AE3C60000FCE9A0 /* RLDTableViewModelProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewModelProvider.h; sourceTree = "<group>"; };
+		451E2C3D1AE3C60000FCE9A0 /* RLDTableViewModelProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewModelProvider.m; sourceTree = "<group>"; };
+		4547513B1ADFADDF00813F1B /* NSObject+Accessors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Accessors.h"; sourceTree = "<group>"; };
+		4547513C1ADFADDF00813F1B /* NSObject+Accessors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Accessors.m"; sourceTree = "<group>"; };
+		4547513D1ADFADDF00813F1B /* RLDTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewDataSource.h; sourceTree = "<group>"; };
+		4547513E1ADFADDF00813F1B /* RLDTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewDataSource.m; sourceTree = "<group>"; };
+		4547513F1ADFADDF00813F1B /* RLDTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewDelegate.h; sourceTree = "<group>"; };
+		454751401ADFADDF00813F1B /* RLDTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewDelegate.m; sourceTree = "<group>"; };
+		454751411ADFADDF00813F1B /* RLDTableViewEventHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewEventHandlerProtocol.h; sourceTree = "<group>"; };
+		454751421ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewEventHandlerProvider.h; sourceTree = "<group>"; };
+		454751431ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewEventHandlerProvider.m; sourceTree = "<group>"; };
+		454751441ADFADDF00813F1B /* RLDTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewModel.h; sourceTree = "<group>"; };
+		454751451ADFADDF00813F1B /* RLDTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewModel.m; sourceTree = "<group>"; };
+		454751461ADFADDF00813F1B /* RLDTableViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewModelProtocol.h; sourceTree = "<group>"; };
+		454751471ADFADDF00813F1B /* RLDTableViewSuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewSuite.h; sourceTree = "<group>"; };
+		454EABA71AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewHeaderViewEventHandler.h; sourceTree = "<group>"; };
+		454EABA81AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewHeaderViewEventHandler.m; sourceTree = "<group>"; };
+		454EABAB1AE2F98E000B47C2 /* RLDBigPictureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDBigPictureTableViewCell.h; sourceTree = "<group>"; };
+		454EABAC1AE2F98E000B47C2 /* RLDBigPictureTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDBigPictureTableViewCell.m; sourceTree = "<group>"; };
+		454EABAD1AE2F98E000B47C2 /* RLDCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDCommentTableViewCell.h; sourceTree = "<group>"; };
+		454EABAE1AE2F98E000B47C2 /* RLDCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDCommentTableViewCell.m; sourceTree = "<group>"; };
+		454EABAF1AE2F98E000B47C2 /* RLDSimpleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDSimpleTableViewCell.h; sourceTree = "<group>"; };
+		454EABB01AE2F98E000B47C2 /* RLDSimpleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDSimpleTableViewCell.m; sourceTree = "<group>"; };
+		454EABB11AE2F98E000B47C2 /* RLDTableViewHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewHeaderView.h; sourceTree = "<group>"; };
+		454EABB21AE2F98E000B47C2 /* RLDTableViewHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewHeaderView.m; sourceTree = "<group>"; };
+		454EABB81AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDBigPictureTableViewCellModel.h; sourceTree = "<group>"; };
+		454EABB91AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDBigPictureTableViewCellModel.m; sourceTree = "<group>"; };
+		454EABBA1AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDCommentTableViewCellModel.h; sourceTree = "<group>"; };
+		454EABBB1AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDCommentTableViewCellModel.m; sourceTree = "<group>"; };
+		454EABBC1AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDGenericTableViewCellModel.h; sourceTree = "<group>"; };
+		454EABBD1AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDGenericTableViewCellModel.m; sourceTree = "<group>"; };
+		454EABBE1AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDSimpleTableViewCellModel.h; sourceTree = "<group>"; };
+		454EABBF1AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDSimpleTableViewCellModel.m; sourceTree = "<group>"; };
+		454EABC01AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewHeaderViewModel.h; sourceTree = "<group>"; };
+		454EABC11AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewHeaderViewModel.m; sourceTree = "<group>"; };
+		454EABC81AE2FA08000B47C2 /* RLDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDMasterViewController.h; sourceTree = "<group>"; };
+		454EABC91AE2FA08000B47C2 /* RLDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDMasterViewController.m; sourceTree = "<group>"; };
+		454EABD21AE31EAC000B47C2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		454EABD31AE31EAC000B47C2 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		454EABD41AE31EAC000B47C2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		454EABD51AE31EAC000B47C2 /* RLDTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLDTableViewHeaderView.xib; sourceTree = "<group>"; };
+		4585806C1ADFD4A5004CAA27 /* RLDTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDTableViewController.h; sourceTree = "<group>"; };
+		4585806D1ADFD4A5004CAA27 /* RLDTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewController.m; sourceTree = "<group>"; };
+		458580771ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDGenericTableViewCellEventHandler.h; sourceTree = "<group>"; };
+		458580781ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDGenericTableViewCellEventHandler.m; sourceTree = "<group>"; };
+		45EDE5FA1ADFAD8500644F70 /* TableViewPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EDE5FE1ADFAD8500644F70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45EDE5FF1ADFAD8500644F70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45EDE6011ADFAD8500644F70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45EDE6021ADFAD8500644F70 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45EDE5F71ADFAD8500644F70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4547513A1ADFADDF00813F1B /* RLDTableViewSuite */ = {
+			isa = PBXGroup;
+			children = (
+				454751471ADFADDF00813F1B /* RLDTableViewSuite.h */,
+				4547513D1ADFADDF00813F1B /* RLDTableViewDataSource.h */,
+				4547513E1ADFADDF00813F1B /* RLDTableViewDataSource.m */,
+				454751461ADFADDF00813F1B /* RLDTableViewModelProtocol.h */,
+				454751441ADFADDF00813F1B /* RLDTableViewModel.h */,
+				454751451ADFADDF00813F1B /* RLDTableViewModel.m */,
+				4547513B1ADFADDF00813F1B /* NSObject+Accessors.h */,
+				4547513C1ADFADDF00813F1B /* NSObject+Accessors.m */,
+				4547513F1ADFADDF00813F1B /* RLDTableViewDelegate.h */,
+				454751401ADFADDF00813F1B /* RLDTableViewDelegate.m */,
+				454751411ADFADDF00813F1B /* RLDTableViewEventHandlerProtocol.h */,
+				454751421ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.h */,
+				454751431ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.m */,
+				4506F8761AE5585C00EF8A33 /* RLDHandledViewProtocol.h */,
+				4585806C1ADFD4A5004CAA27 /* RLDTableViewController.h */,
+				4585806D1ADFD4A5004CAA27 /* RLDTableViewController.m */,
+			);
+			name = RLDTableViewSuite;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		454EABAA1AE2F98E000B47C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4506F8771AE558AF00EF8A33 /* RLDGenericTableViewCell.h */,
+				4506F8781AE558AF00EF8A33 /* RLDGenericTableViewCell.m */,
+				454EABAF1AE2F98E000B47C2 /* RLDSimpleTableViewCell.h */,
+				454EABB01AE2F98E000B47C2 /* RLDSimpleTableViewCell.m */,
+				454EABAB1AE2F98E000B47C2 /* RLDBigPictureTableViewCell.h */,
+				454EABAC1AE2F98E000B47C2 /* RLDBigPictureTableViewCell.m */,
+				454EABAD1AE2F98E000B47C2 /* RLDCommentTableViewCell.h */,
+				454EABAE1AE2F98E000B47C2 /* RLDCommentTableViewCell.m */,
+				454EABB11AE2F98E000B47C2 /* RLDTableViewHeaderView.h */,
+				454EABB21AE2F98E000B47C2 /* RLDTableViewHeaderView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		454EABB71AE2F9AD000B47C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				451E2C3C1AE3C60000FCE9A0 /* RLDTableViewModelProvider.h */,
+				451E2C3D1AE3C60000FCE9A0 /* RLDTableViewModelProvider.m */,
+				454EABBC1AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.h */,
+				454EABBD1AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.m */,
+				454EABBE1AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.h */,
+				454EABBF1AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.m */,
+				454EABB81AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.h */,
+				454EABB91AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.m */,
+				454EABBA1AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.h */,
+				454EABBB1AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.m */,
+				454EABC01AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.h */,
+				454EABC11AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		454EABC71AE2FA08000B47C2 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				454EABC81AE2FA08000B47C2 /* RLDMasterViewController.h */,
+				454EABC91AE2FA08000B47C2 /* RLDMasterViewController.m */,
+				4506F8731AE5508400EF8A33 /* RLDWebViewController.h */,
+				4506F8741AE5508400EF8A33 /* RLDWebViewController.m */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		454EABD11AE31EAC000B47C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				454EABD41AE31EAC000B47C2 /* Main.storyboard */,
+				454EABD51AE31EAC000B47C2 /* RLDTableViewHeaderView.xib */,
+				454EABD31AE31EAC000B47C2 /* LaunchScreen.xib */,
+				454EABD21AE31EAC000B47C2 /* Images.xcassets */,
+				4506F87A1AE5D75900EF8A33 /* viewModelData.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		458580761ADFE5BC004CAA27 /* Event handlers */ = {
+			isa = PBXGroup;
+			children = (
+				458580771ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.h */,
+				458580781ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.m */,
+				454EABA71AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.h */,
+				454EABA81AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.m */,
+			);
+			path = "Event handlers";
+			sourceTree = "<group>";
+		};
+		45EDE5F11ADFAD8500644F70 = {
+			isa = PBXGroup;
+			children = (
+				4547513A1ADFADDF00813F1B /* RLDTableViewSuite */,
+				45EDE5FC1ADFAD8500644F70 /* TableViewPrototype */,
+				45EDE5FB1ADFAD8500644F70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45EDE5FB1ADFAD8500644F70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45EDE5FA1ADFAD8500644F70 /* TableViewPrototype.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45EDE5FC1ADFAD8500644F70 /* TableViewPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				454EABB71AE2F9AD000B47C2 /* Models */,
+				454EABAA1AE2F98E000B47C2 /* Views */,
+				458580761ADFE5BC004CAA27 /* Event handlers */,
+				454EABC71AE2FA08000B47C2 /* View controllers */,
+				454EABD11AE31EAC000B47C2 /* Resources */,
+				45EDE5FD1ADFAD8500644F70 /* Supporting Files */,
+			);
+			path = TableViewPrototype;
+			sourceTree = "<group>";
+		};
+		45EDE5FD1ADFAD8500644F70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45EDE6011ADFAD8500644F70 /* AppDelegate.h */,
+				45EDE6021ADFAD8500644F70 /* AppDelegate.m */,
+				45EDE5FF1ADFAD8500644F70 /* main.m */,
+				45EDE5FE1ADFAD8500644F70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EDE5F91ADFAD8500644F70 /* TableViewPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45EDE61D1ADFAD8500644F70 /* Build configuration list for PBXNativeTarget "TableViewPrototype" */;
+			buildPhases = (
+				45EDE5F61ADFAD8500644F70 /* Sources */,
+				45EDE5F71ADFAD8500644F70 /* Frameworks */,
+				45EDE5F81ADFAD8500644F70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewPrototype;
+			productName = TableViewPrototype;
+			productReference = 45EDE5FA1ADFAD8500644F70 /* TableViewPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45EDE5F21ADFAD8500644F70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Rafael Lopez Diez";
+				TargetAttributes = {
+					45EDE5F91ADFAD8500644F70 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 45EDE5F51ADFAD8500644F70 /* Build configuration list for PBXProject "TableViewPrototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45EDE5F11ADFAD8500644F70;
+			productRefGroup = 45EDE5FB1ADFAD8500644F70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45EDE5F91ADFAD8500644F70 /* TableViewPrototype */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45EDE5F81ADFAD8500644F70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454EABD81AE31EAC000B47C2 /* Main.storyboard in Resources */,
+				454EABD61AE31EAC000B47C2 /* Images.xcassets in Resources */,
+				454EABD91AE31EAC000B47C2 /* RLDTableViewHeaderView.xib in Resources */,
+				4506F87B1AE5D75900EF8A33 /* viewModelData.plist in Resources */,
+				454EABD71AE31EAC000B47C2 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45EDE5F61ADFAD8500644F70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454751491ADFADDF00813F1B /* RLDTableViewDataSource.m in Sources */,
+				451E2C3E1AE3C60000FCE9A0 /* RLDTableViewModelProvider.m in Sources */,
+				454751481ADFADDF00813F1B /* NSObject+Accessors.m in Sources */,
+				454EABC61AE2F9AD000B47C2 /* RLDTableViewHeaderViewModel.m in Sources */,
+				454EABB31AE2F98E000B47C2 /* RLDBigPictureTableViewCell.m in Sources */,
+				454EABB61AE2F98E000B47C2 /* RLDTableViewHeaderView.m in Sources */,
+				4547514B1ADFADDF00813F1B /* RLDTableViewEventHandlerProvider.m in Sources */,
+				454EABC41AE2F9AD000B47C2 /* RLDGenericTableViewCellModel.m in Sources */,
+				454EABC51AE2F9AD000B47C2 /* RLDSimpleTableViewCellModel.m in Sources */,
+				454EABA91AE2F973000B47C2 /* RLDTableViewHeaderViewEventHandler.m in Sources */,
+				454EABC21AE2F9AD000B47C2 /* RLDBigPictureTableViewCellModel.m in Sources */,
+				4547514C1ADFADDF00813F1B /* RLDTableViewModel.m in Sources */,
+				458580791ADFE5E7004CAA27 /* RLDGenericTableViewCellEventHandler.m in Sources */,
+				4506F8791AE558AF00EF8A33 /* RLDGenericTableViewCell.m in Sources */,
+				454EABB41AE2F98E000B47C2 /* RLDCommentTableViewCell.m in Sources */,
+				454EABC31AE2F9AD000B47C2 /* RLDCommentTableViewCellModel.m in Sources */,
+				4506F8751AE5508400EF8A33 /* RLDWebViewController.m in Sources */,
+				454EABB51AE2F98E000B47C2 /* RLDSimpleTableViewCell.m in Sources */,
+				45EDE6031ADFAD8500644F70 /* AppDelegate.m in Sources */,
+				45EDE6001ADFAD8500644F70 /* main.m in Sources */,
+				454EABCA1AE2FA08000B47C2 /* RLDMasterViewController.m in Sources */,
+				4547514A1ADFADDF00813F1B /* RLDTableViewDelegate.m in Sources */,
+				4585806E1ADFD4A5004CAA27 /* RLDTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45EDE61B1ADFAD8500644F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		45EDE61C1ADFAD8500644F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45EDE61E1ADFAD8500644F70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45EDE61F1ADFAD8500644F70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TableViewPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45EDE5F51ADFAD8500644F70 /* Build configuration list for PBXProject "TableViewPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EDE61B1ADFAD8500644F70 /* Debug */,
+				45EDE61C1ADFAD8500644F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45EDE61D1ADFAD8500644F70 /* Build configuration list for PBXNativeTarget "TableViewPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45EDE61E1ADFAD8500644F70 /* Debug */,
+				45EDE61F1ADFAD8500644F70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45EDE5F21ADFAD8500644F70 /* Project object */;
+}
