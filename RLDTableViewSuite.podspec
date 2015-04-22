@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/rlopezdiez/RLDTableViewSuite.git', :tag => s.version.to_s }
   s.source_files = 'Classes/*.{h,m}'
   s.license      = { :type => 'Apache License, Version 2.0', :file => 'LICENSE' }
-  s.platform     = :ios
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 end
