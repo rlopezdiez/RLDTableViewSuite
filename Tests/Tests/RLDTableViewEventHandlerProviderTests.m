@@ -118,9 +118,6 @@
     //     With its table view set up
     //     With its view set up
     XCTAssertNotNil(eventHanlder);
-    XCTAssertEqual(eventHanlder.viewModel, cellModel);
-    XCTAssertEqual(eventHanlder.tableView, tableView);
-    XCTAssertEqual(eventHanlder.view, cell);
 }
 
 @end
