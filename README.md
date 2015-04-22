@@ -4,6 +4,8 @@ The ubiquitous `UITableView`, with its required data source and delegate, is one
 
 `RLDTableViewSuite` is a set of ready-to-use protocols and classes that will get you back in track, helping you to refine the shape of your app. They enforce the SOLID principles, with an adaptation of the Model-View-Presenter pattern.
 
+![RLDTableViewSuite sample app](https://raw.githubusercontent.com/rlopezdiez/RLDTableViewSuite/master/README.jpg)
+
 ## Foundations
 
 ### RLDTableViewDataSource and RLDTableViewDelegate
