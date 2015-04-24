@@ -4,8 +4,8 @@
 #import "RLDTableViewDataSource.h"
 
 // Collaborators
-#import "TestHelpers.h"
 #import "RLDTableViewModel.h"
+#import "TestHelpers.h"
 
 #define RLDRepeat(expression, times) \
 for (NSUInteger i = 0; i < times; i++) expression;

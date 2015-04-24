@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450275FB1AEAE07C00350863 /* RLDTableViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 450275FA1AEAE07C00350863 /* RLDTableViewModelTests.m */; };
 		453D12E31ACA01060093EE30 /* RLDTableViewDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DC59591AA4DFD400E9AEB1 /* RLDTableViewDataSourceTests.m */; };
 		453D12E41ACA01090093EE30 /* TestHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DC597E1AA4E96F00E9AEB1 /* TestHelpers.m */; };
 		453D12ED1ACA18240093EE30 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453D12EA1ACA18240093EE30 /* Default-568h@2x.png */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450275FA1AEAE07C00350863 /* RLDTableViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLDTableViewModelTests.m; sourceTree = "<group>"; };
 		453D12B11ACA00D30093EE30 /* BundleLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BundleLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453D12C91ACA00D40093EE30 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		453D12EA1ACA18240093EE30 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		45DC59581AA4DFD400E9AEB1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				450275FA1AEAE07C00350863 /* RLDTableViewModelTests.m */,
 				45DC59591AA4DFD400E9AEB1 /* RLDTableViewDataSourceTests.m */,
 				457DB2701AD46A1A004BB589 /* RLDTableViewEventHandlerProviderTests.m */,
 				455DB52A1AD84F8A00852683 /* RLDTableViewDelegateTests.m */,
@@ -254,6 +257,7 @@
 				453D12E41ACA01090093EE30 /* TestHelpers.m in Sources */,
 				457DB26C1AD4355A004BB589 /* RLDTableViewModel.m in Sources */,
 				457DB2711AD46A1A004BB589 /* RLDTableViewEventHandlerProviderTests.m in Sources */,
+				450275FB1AEAE07C00350863 /* RLDTableViewModelTests.m in Sources */,
 				453D12E31ACA01060093EE30 /* RLDTableViewDataSourceTests.m in Sources */,
 				457DB26A1AD4355A004BB589 /* RLDTableViewDelegate.m in Sources */,
 			);
