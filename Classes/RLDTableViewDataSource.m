@@ -25,19 +25,19 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)index {
     NSString *title = [self tableViewModel:self.tableViewModel headerModelForSection:index valueForSelector:@selector(title)];
-    return title ?: nil;
+    return title;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)index {
     NSString *title = [self tableViewModel:self.tableViewModel footerModelForSection:index valueForSelector:@selector(title)];
-    return title ?: nil;
+    return title;
 }
 
 #pragma mark - Sections index titles
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     NSArray *sectionIndexTitles = [self tableViewModel:self.tableViewModel valueForSelector:@selector(sectionIndexTitles)];
-    return  sectionIndexTitles ?: nil;
+    return  sectionIndexTitles;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
