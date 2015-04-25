@@ -39,9 +39,7 @@ for (NSUInteger i = 0; i < times; i++) expression;
     
     // WHEN:
     //   We add the cell model to the table view model
-    //   We inject the data model to the data source
     [dataModel addCellModel:testCellModel];
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   A section is automatically created in the data model
@@ -59,13 +57,11 @@ for (NSUInteger i = 0; i < times; i++) expression;
     
     // WHEN:
     //   We add the cell model to the table view model
-    //   We inject the data model to the data source
     //   We set up the last section in the model
     //     setting up its index title
     //     setting up its header
     //     setting up its footer
     [dataModel addCellModel:testCellModel];
-    dataSource.tableViewModel = dataModel;
 
     RLDTableViewSectionModel *sectionModel = [dataModel lastSectionModel];
     sectionModel.indexTitle = @"~";
@@ -108,9 +104,7 @@ for (NSUInteger i = 0; i < times; i++) expression;
     // WHEN:
     //   We add the cell model to the table view model
     //     specifying it should be added to the manually created section
-    //   We inject the data model to the data source
     [dataModel addCellModel:testCellModel toSectionModel:sectionModel];
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return one section
@@ -139,10 +133,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //   We add the cell model to the table view model twice
     //   We add the cell model to the table view model three times
     //     specifying it should be added to the manually created section
-    //   We inject the data model to the data source
     RLDRepeat([dataModel addCellModel:testCellModel], 2);
     RLDRepeat([dataModel addCellModel:testCellModel toSectionModel:sectionModel], 3);
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return two sections
@@ -171,10 +163,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //     specifying it should be added to the first manually created section
     //   We add the cell model to the table view model three times
     //     specifying it should be added to the second manually created section
-    //   We inject the data model to the data source
     RLDRepeat([dataModel addCellModel:testCellModel toSectionModel:firstSectionModel], 2);
     RLDRepeat([dataModel addCellModel:testCellModel toSectionModel:secondSectionModel], 3);
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return two sections
@@ -210,10 +200,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //     specifying it should be added to the first manually created section
     //   We add the cell model to the table view
     //     specifying it should be added to the second manually created section
-    //   We inject the data model to the data source
     [dataModel addCellModel:testCellModel toSectionModel:firstSectionModel];
     [dataModel addCellModel:testCellModel toSectionModel:secondSectionModel];
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return and array with two section index titles
@@ -221,8 +209,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //   The second one must be equal to the section index title of the second manually created section
     NSArray *sectionIndexTitles = [dataSource sectionIndexTitlesForTableView:nil];
     XCTAssertEqual([sectionIndexTitles count], 2);
-    XCTAssertEqual([sectionIndexTitles objectAtIndex:0], firstSectionModel.indexTitle);
-    XCTAssertEqual([sectionIndexTitles objectAtIndex:1], secondSectionModel.indexTitle);
+    XCTAssertEqual(sectionIndexTitles[0], firstSectionModel.indexTitle);
+    XCTAssertEqual(sectionIndexTitles[1], secondSectionModel.indexTitle);
 }
 
 - (void)testManualSectionIndexTitles {
@@ -245,10 +233,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //     specifying it should be added to the first manually created section
     //   We add the cell model to the table view
     //     specifying it should be added to the second manually created section
-    //   We inject the data model to the data source
     [dataModel addCellModel:testCellModel toSectionModel:firstSectionModel];
     [dataModel addCellModel:testCellModel toSectionModel:secondSectionModel];
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return and array equal to the previously set up index title array of the data model
@@ -276,10 +262,8 @@ for (NSUInteger i = 0; i < times; i++) expression;
     //     specifying it should be added to the first manually created section
     //   We add the cell model to the table view
     //     specifying it should be added to the second manually created section
-    //   We inject the data model to the data source
     [dataModel addCellModel:testCellModel toSectionModel:firstSectionModel];
     [dataModel addCellModel:testCellModel toSectionModel:secondSectionModel];
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should return the second section when asked to provide an index for the fourth element of the section index titles array
@@ -301,10 +285,6 @@ for (NSUInteger i = 0; i < times; i++) expression;
     [dataModel addCellModel:firstCellModel];
     [dataModel addCellModel:secondCellModel];
     
-    // WHEN:
-    //   We inject the data model to the data source
-    dataSource.tableViewModel = dataModel;
-    
     // THEN:
     //   The data source should identify the first cell in the first section as editable
     //   The data source should identify the second cell in the first section as non editable
@@ -324,10 +304,6 @@ for (NSUInteger i = 0; i < times; i++) expression;
     secondCellModel.movable = NO;
     [dataModel addCellModel:firstCellModel];
     [dataModel addCellModel:secondCellModel];
-    
-    // WHEN:
-    //   We inject the data model to the data source
-    dataSource.tableViewModel = dataModel;
     
     // THEN:
     //   The data source should identify the first cell in the first section as movable
@@ -353,9 +329,7 @@ for (NSUInteger i = 0; i < times; i++) expression;
     }, 2);
     
     // WHEN:
-    //   We inject the data model to the data source
     //   We ask the data source to insert a new cell at the second row in the first section
-    dataSource.tableViewModel = dataModel;
     [dataSource tableView:nil
        commitEditingStyle:UITableViewCellEditingStyleInsert
         forRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
@@ -389,9 +363,7 @@ for (NSUInteger i = 0; i < times; i++) expression;
     RLDTableViewSectionModel *sectionModel = [dataModel lastSectionModel];
     
     // WHEN:
-    //   We inject the data model to the data source
     //   We ask the data source to delete the second row in the first section
-    dataSource.tableViewModel = dataModel;
     [dataSource tableView:nil
        commitEditingStyle:UITableViewCellEditingStyleDelete
         forRowAtIndexPath:[NSIndexPath indexPathForRow:1 inSection:0]];
@@ -424,9 +396,7 @@ for (NSUInteger i = 0; i < times; i++) expression;
     RLDTableViewSectionModel *secondSectionModel = dataModel.sectionModels[1];
    
     // WHEN:
-    //   We inject the data model to the data source
     //   We ask the data source to move the first row of the first section to the second row of the second section
-    dataSource.tableViewModel = dataModel;
     [dataSource tableView:nil
        moveRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]
               toIndexPath:[NSIndexPath indexPathForRow:1 inSection:1]];
@@ -464,7 +434,6 @@ for (NSUInteger i = 0; i < times; i++) expression;
     
     RLDTestCellModel *testCellModel = [RLDTestCellModel new];
     [dataModel addCellModel:testCellModel];
-    dataSource.tableViewModel = dataModel;
     
     Class expectedCellClass = [RLDTestTableViewCell class];
     [tableView registerClass:expectedCellClass forCellReuseIdentifier:testCellModel.reuseIdentifier];
