@@ -3,6 +3,6 @@
 @interface RLDTableViewEventHandlerProvider : NSObject<RLDTableViewEventHandlerProvider>
 
 + (void)registerEventHandlerClass:(Class)eventHandlerClass;
-+ (NSSet *)availableEventHandlerClasses;
++ (NSArray *)availableEventHandlerClasses;
 
 @end

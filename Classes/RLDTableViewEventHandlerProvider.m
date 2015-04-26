@@ -1,7 +1,7 @@
 #import "RLDTableViewEventHandlerProvider.h"
 #import <objc/runtime.h>
 
-static NSMutableSet *_availableEventHandlerClasses;
+static NSMutableArray *_availableEventHandlerClasses;
 
 #pragma mark - RLDTableViewEventHandlerProvider implementation
 
@@ -27,7 +27,7 @@ static NSMutableSet *_availableEventHandlerClasses;
 
 #pragma mark - Event handler registration
 
-+ (NSSet *)availableEventHandlerClasses {
++ (NSArray *)availableEventHandlerClasses {
     if ([_availableEventHandlerClasses count] == 0) [self automaticallyRegisterEventHandlerClasses];
     
     return _availableEventHandlerClasses;
@@ -50,7 +50,7 @@ static NSMutableSet *_availableEventHandlerClasses;
 
 + (void)addClassToListOfAvailableEventHandlerClasses:(Class)class {
     if ([self classConformsToEventHandlerProtocol:class]) {
-        _availableEventHandlerClasses = _availableEventHandlerClasses ?: [NSMutableSet set];
+        _availableEventHandlerClasses = _availableEventHandlerClasses ?: [NSMutableArray array];
         
         [_availableEventHandlerClasses addObject:class];
     }

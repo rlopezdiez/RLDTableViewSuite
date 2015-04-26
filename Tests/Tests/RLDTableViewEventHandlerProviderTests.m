@@ -38,7 +38,7 @@
     //     not registered with the SUT
     // WHEN:
     //   We ask the SUT for all the available event handler classes
-    NSSet *availableEventHandlerClasses = [RLDTableViewEventHandlerProvider availableEventHandlerClasses];
+    NSArray *availableEventHandlerClasses = [RLDTableViewEventHandlerProvider availableEventHandlerClasses];
     
     // THEN:
     //   It returns a non-empty set
@@ -58,13 +58,13 @@
     
     // WHEN:
     //   We ask the SUT for all the available event handlers
-    NSSet *availableEventHandlerClasses = [RLDTableViewEventHandlerProvider availableEventHandlerClasses];
+    NSArray *availableEventHandlerClasses = [RLDTableViewEventHandlerProvider availableEventHandlerClasses];
     
     // THEN:
     //   It returns a set with just the second cell model
     XCTAssertEqual([availableEventHandlerClasses count], 1);
     XCTAssertFalse([availableEventHandlerClasses containsObject:firstEventHandlerClass]);
-    XCTAssertEqual([availableEventHandlerClasses anyObject], secondEventHandlerClass);
+    XCTAssertEqual([availableEventHandlerClasses firstObject], secondEventHandlerClass);
 }
 
 - (void)testFactoryMethod {
