@@ -9,7 +9,7 @@ static NSMutableSet *_availableEventHandlerClasses;
 
 #pragma mark - Factory method
 
-+ (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view {
++ (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view {
     id<RLDTableViewGenericEventHandler> eventHandler;
     for (Class eventHandlerClass in [self availableEventHandlerClasses]) {
         if ([eventHandlerClass canHandleTableView:tableView viewModel:viewModel view:view]) {
@@ -21,7 +21,7 @@ static NSMutableSet *_availableEventHandlerClasses;
     return eventHandler;
 }
 
-- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view {
+- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view {
     return [[self class] eventHandlerWithTableView:tableView viewModel:viewModel view:view];
 }
 

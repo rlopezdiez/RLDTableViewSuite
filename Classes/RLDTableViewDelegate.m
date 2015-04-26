@@ -247,7 +247,7 @@
     return eventHandler;
 }
 
-- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view {
+- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view {
     id<RLDTableViewGenericEventHandler> eventHandler = ([self reusableEventHandlerWithTableView:tableView viewModel:viewModel view:view]
                                                         ?: [self.eventHandlerProvider eventHandlerWithTableView:tableView viewModel:viewModel view:view]);
     
@@ -258,7 +258,7 @@
     return eventHandler;
 }
 
-- (id<RLDTableViewGenericEventHandler>)reusableEventHandlerWithTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view {
+- (id<RLDTableViewGenericEventHandler>)reusableEventHandlerWithTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view {
     if (![view respondsToSelector:@selector(eventHandler)]) return nil;
     
     id<RLDTableViewGenericEventHandler> eventHandler = [(id<RLDHandledViewProtocol>)view eventHandler];

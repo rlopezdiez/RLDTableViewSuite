@@ -25,7 +25,7 @@
 
 #pragma mark - Suitability checking
 
-+ (BOOL)canHandleTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view {
++ (BOOL)canHandleTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view {
     return ([viewModel  isKindOfClass:[RLDGenericTableViewCellModel class]]
             && tableView
             && [view isKindOfClass:[RLDGenericTableViewCell class]]);

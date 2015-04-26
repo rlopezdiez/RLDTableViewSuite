@@ -5,11 +5,11 @@
 @protocol RLDTableViewGenericEventHandler <NSObject>
 
 // Suitability checking
-+ (BOOL)canHandleTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view;
++ (BOOL)canHandleTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view;
 
 // Collaborators
 - (void)setTableView:(UITableView *)tableView;
-- (void)setViewModel:(id<NSObject>)viewModel;
+- (void)setViewModel:(id<RLDTableViewReusableViewModel>)viewModel;
 - (void)setView:(UIView *)view;
 
 @optional
@@ -60,6 +60,6 @@
 
 @protocol RLDTableViewEventHandlerProvider <NSObject>
 
-- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<NSObject>)viewModel view:(UIView *)view;
+- (id<RLDTableViewGenericEventHandler>)eventHandlerWithTableView:(UITableView *)tableView viewModel:(id<RLDTableViewReusableViewModel>)viewModel view:(UIView *)view;
 
 @end
