@@ -92,32 +92,4 @@
     XCTAssertNil(secondEventHandler);
 }
 
-- (void)testEventHandlerIsSetUp {
-    // GIVEN:
-    //   A cell model
-    //   An event hanlder
-    //     which is able to handle the cell model
-    //     registered with the SUT
-    //   A table view
-    //   A cell
-    RLDTestCellModel *cellModel = [RLDTestCellModel new];
-    [[sut class] registerEventHandlerClass:[RLDTestEventHandler class]];
-    [RLDTestEventHandler setCanHandle:^BOOL(id<NSObject> model, UITableView *tableView, UIView *view) {
-        return YES;
-    }];
-    UITableView *tableView = [UITableView new];
-    UITableViewCell *cell = [UITableViewCell new];
-    
-    // WHEN:
-    //   We ask the sut for a event handler for model, table view and cell
-    RLDTestEventHandler *eventHanlder = (RLDTestEventHandler *)[sut eventHandlerWithTableView:tableView viewModel:cellModel view:cell];
-    
-    // THEN:
-    //   It is able to provide an event handler
-    //     With its model set up
-    //     With its table view set up
-    //     With its view set up
-    XCTAssertNotNil(eventHanlder);
-}
-
 @end
