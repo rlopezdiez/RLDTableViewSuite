@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'RLDTableViewSuite'
-  s.version      = '0.1.0'
+  s.version      = '0.2.0'
   s.homepage     = 'https://github.com/rlopezdiez/RLDTableViewSuite.git'
   s.summary      = 'Reusable table view controller, data source and delegate for all your UITableView needs'
   s.authors      = { 'Rafael Lopez Diez' => 'https://www.linkedin.com/in/rafalopezdiez' }
