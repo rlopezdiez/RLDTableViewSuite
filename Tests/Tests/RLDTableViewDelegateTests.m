@@ -407,7 +407,7 @@ XCTAssertNotNil([eventHandler invocationForPerformedSelector:selector]);
     //     with a certain editing style
     //     added to the table model
     RLDTableViewCellModel *cellModel = [self cellModelInTableViewDataModel];
-    cellModel.titleForDeleteConfirmationButton = @"TestTitleForDeleteConfirmationButton ";
+    cellModel.titleForDeleteConfirmationButton = @"TestTitleForDeleteConfirmationButton";
     
     // WHEN:
     //   We ask the delegate for the editing style of a row at a certain index path
