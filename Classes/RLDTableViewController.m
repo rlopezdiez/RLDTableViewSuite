@@ -79,7 +79,7 @@ __weak static UIView *_firstResponder;
 
 @synthesize tableView = _tableView;
 
-#pragma mark - Inizialitation
+#pragma mark - Initialization
 
 - (instancetype)initWithStyle:(UITableViewStyle)style {
     if (self = [super init]) {
