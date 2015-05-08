@@ -6,6 +6,8 @@ The ubiquitous `UITableView`, with its required data source and delegate, is one
 
 ![RLDTableViewSuite sample app](https://raw.githubusercontent.com/rlopezdiez/RLDTableViewSuite/master/README.jpg)
 
+> [Swift version](https://github.com/rlopezdiez/RLDTableViewSwift) also available.
+
 ## Foundations
 
 ### RLDTableViewDataSource and RLDTableViewDelegate
